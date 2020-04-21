@@ -14,5 +14,5 @@ docker build -t pasdam/cluster-debug-tools:latest .
 At this point it's possible to run it with:
 
 ```sh
-telepresence --docker-run --rm -it pasdam/cluster-debug-tool:latest /bin/sh
+telepresence --docker-run --rm -it pasdam/cluster-debug-tools:latest /bin/sh
 ```

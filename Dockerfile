@@ -8,3 +8,6 @@ RUN apk update && \
         jq \
         netcat-openbsd \
         openssh
+
+ENV ENV="/root/.bashrc"
+COPY .profile /root/.bashrc

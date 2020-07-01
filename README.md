@@ -1,7 +1,15 @@
 # docker-cluster-debug-tool
 
 This repo contains a docker image used as a debug tools to temporary deploy in
-a kubernetes cluster using [telepresence](https://www.telepresence.io/):
+a kubernetes cluster using [telepresence](https://www.telepresence.io/).
+
+## Tools included
+
+* curl;
+* jq;
+* netcat;
+* openssh;
+* telnet.
 
 ## Build and run
 

@@ -1,0 +1,23 @@
+FROM ubuntu:22.10
+
+RUN apt update && \
+    apt install -y --no-install-recommends \
+        curl \
+        dnsutils \
+        ethtool \
+        hping3 \
+        iperf3 \
+        iproute2 \
+        iputils-ping \
+        iputils-tracepath \
+        jq \
+        mtr \
+        net-tools \
+        netcat-openbsd \
+        openssh-client \
+        tcpdump \
+        traceroute \
+        tshark
+
+ENV ENV="/root/.bashrc"
+COPY .profile /root/.bashrc

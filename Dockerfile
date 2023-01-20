@@ -6,7 +6,7 @@ RUN apk add --update --no-cache \
         curl \
         jq \
         netcat-openbsd \
-        openssh
+        openssh-client
 
 ENV ENV="/root/.bashrc"
 COPY .profile /root/.bashrc

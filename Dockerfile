@@ -1,7 +1,6 @@
-FROM alpine:3.12.0
+FROM alpine:3.17.1
 
-RUN apk update && \
-    apk add --no-cache \
+RUN apk add --update --no-cache \
         bash \
         busybox-extras \
         curl \
